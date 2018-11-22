@@ -13,6 +13,7 @@ After Node is installed in your system, follow the below steps.
 3. Now install all modules listed as dependencies in `package.json` by running the command
 
  *`npm install`
+ 
  *`npm start`
 
  navigate to [http://localhost:3000/](http://localhost:3000/)
