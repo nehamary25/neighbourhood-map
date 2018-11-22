@@ -2,9 +2,7 @@ import React, {Component} from 'react';
 import MyLocationList from './MyLocationList';
 
 class App extends Component {
-    /**
-     * Constructor
-     */
+    
     constructor(props) {
         super(props);
         this.state = {
@@ -157,10 +155,7 @@ class App extends Component {
         });
     }
 
-    /**
-     * Open the infowindow for the marker
-     * @param {object} location marker
-     */
+    
     openInfoWindow(marker) {
         this.closeInfoWindow();
         this.state.infowindow.open(this.state.map, marker);
@@ -174,10 +169,7 @@ class App extends Component {
         this.getMarkerInfo(marker);
     }
 
-    /**
-     * Retrive the location data from the foursquare api for the marker and display it in the infowindow
-     * @param {object} location marker
-     */
+    
     getMarkerInfo(marker) {
         var self = this;
         var clientId = "TPIDDHBKB2QFBWEV2MPDOFGUSWXCXGAA5IVOWEMN5ASR3UJW";
@@ -208,10 +200,7 @@ class App extends Component {
             });
     }
 
-    /**
-     * Close the infowindow for the marker
-     * @param {object} location marker
-     */
+   
     closeInfoWindow() {
         if (this.state.prevmarker) {
             this.state.prevmarker.setAnimation(null);
@@ -222,9 +211,7 @@ class App extends Component {
         this.state.infowindow.close();
     }
 
-    /**
-     * Render function of App
-     */
+    
     render() {
         return (
             <div>
@@ -238,10 +225,7 @@ class App extends Component {
 
 export default App;
 
-/**
- * Load the google maps Asynchronously
- * @param {url} url of the google maps script
- */
+
 function loadMapJS(src) {
     var ref = window.document.getElementsByTagName("script")[0];
     var script = window.document.createElement("script");
