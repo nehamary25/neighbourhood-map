@@ -1,6 +1,6 @@
 # Neighborhood-Map-React
 
-This project is simply but a single-page web application that shows the google map of an area and various points of interest. This is built by using the React framework. The user can search any landmark of his or her interest which are included in the the app. When a particular landmark is selected, additional information about that landmark is displayed from the FourSquare APIs.  
+This project is simply but a single-page web application that shows the google map of an area and various points of interest. This is built by using the React framework. The user can search any landmark of his or her interest which are included in the the app. When a particular landmark is selected, additional information about that landmark is displayed from the FourSquare APIs. df
 
 
 ### How to run the project in Development Mode
